@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Noto+Serif+TC:wght@400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", "Noto Serif TC", ui-serif, Georgia, serif;
+}
+
+body {
+  @apply bg-[#ffe6d7] text-[#1a1a1a] antialiased;
+}
+
+.ink-card {
+  @apply bg-[#ffffff] border-2 border-[#e9b156]/50 shadow-[0_10px_40px_rgba(219,76,54,0.1)] relative;
+}
+
+.ink-card::before {
+  content: '';
+  @apply absolute inset-0 border border-[#e9b156]/20 pointer-events-none m-1;
+}
+
+.gold-text {
+  @apply text-[#db4c36];
+}
+
+.vermillion-btn {
+  @apply bg-[#db4c36] text-[#ffffff] border border-[#e9b156]/50 shadow-lg shadow-[#db4c36]/20;
+}
+
+.vermillion-btn:hover {
+  @apply bg-[#c23b28] border-[#e9b156];
+}
+
+.parchment-text {
+  @apply text-[#1a1a1a]/80;
+}
+
+/* Custom scrollbar for new theme */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #ffe6d7;
+}
+::-webkit-scrollbar-thumb {
+  background: #e9b156;
+  border-radius: 3px;
+}
