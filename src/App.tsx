@@ -575,8 +575,14 @@ export default function App() {
       </AnimatePresence>
 
       {/* Footer */}
-      <footer className="mt-12 text-[#db4c36]/30 text-xs text-center tracking-widest">
-        <p>【三國道樞】 宇宙演算法 · 命運解碼</p>
+      <footer className="mt-4 text-[#db4c36]/40 text-xs text-center tracking-widest flex flex-col items-center gap-2">
+        <img 
+          src="https://images.weserv.nl/?url=https://github.com/user-attachments/assets/bde95081-ba56-40bf-873f-82585da403f2" 
+          alt="Footer Logo"
+          className="w-36 h-36 object-contain opacity-50"
+          referrerPolicy="no-referrer"
+        />
+        <p>宇宙演算法 · 命運解碼</p>
       </footer>
     </div>
   );
