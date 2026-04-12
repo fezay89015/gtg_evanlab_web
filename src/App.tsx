@@ -218,7 +218,7 @@ const RESULTS: Record<number, ResultType> = {
     icon: <Sparkles className="w-12 h-12" />,
     color: "from-gray-950/90 to-gray-900/80",
     bgImage: "https://images.unsplash.com/photo-1508804185872-d7badad00f7d?auto=format&fit=crop&q=80&w=1200",
-    charImage: "https://images.weserv.nl/?url=https://github.com/user-attachments/assets/9d7aa264-ce29-4806-9a67-d44e5fbb784b",
+    charImage: "https://images.weserv.nl/?url=https://github.com/user-attachments/assets/3344e827-0d67-43e3-8d7f-5a37e9db9e9c",
     traits: ["善於制衡", "適應力強"],
     strengths: ["風險控管", "靈活應變"]
   }
@@ -363,25 +363,6 @@ export default function App() {
               開啟修煉
               <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </button>
-
-            {/* Debug Buttons */}
-            <div className="mt-8 pt-6 border-t border-[#e9b156]/20">
-              <p className="text-[10px] gold-text mb-3 opacity-50 tracking-widest uppercase">測試通道 (點擊直接跳轉結果)</p>
-              <div className="grid grid-cols-5 gap-2">
-                {Object.values(RESULTS).map((res) => (
-                  <button
-                    key={res.id}
-                    onClick={() => {
-                      setDebugResult(res);
-                      setStep('result');
-                    }}
-                    className="py-2 px-1 text-[10px] border border-[#e9b156]/30 rounded hover:bg-[#db4c36] hover:text-white transition-colors parchment-text"
-                  >
-                    {res.character}
-                  </button>
-                ))}
-              </div>
-            </div>
           </motion.div>
         )}
 
