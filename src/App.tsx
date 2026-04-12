@@ -466,7 +466,7 @@ export default function App() {
                   }}
                   transition={{ delay: 0.4, duration: 0.8, ease: "easeOut" }}
                   className={`absolute z-20 pointer-events-none
-                    ${result.character === '趙雲' ? 'right-0' : 
+                    ${result.character === '趙雲' ? '-right-10 sm:right-0' : 
                       (result.character === '關羽' || result.character === '曹操') ? '-right-5 sm:-right-15' : '-right-10 sm:-right-20'} 
                     ${result.character === '呂布' ? '-top-12 sm:-top-20' : 'top-0'}
                     h-[250%] sm:h-[300%] w-[80%] sm:w-3/4 origin-right-top`}
@@ -481,15 +481,15 @@ export default function App() {
               )}
 
               <motion.div
-                className="relative z-30"
+                className="relative z-30 bg-black/30 backdrop-blur-[2px] p-4 -ml-4 rounded-r-xl inline-block max-w-[85%]"
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.2 }}
               >
-                <span className="inline-block text-sm font-bold tracking-[0.3em] mb-4 uppercase gold-text opacity-80">
+                <span className="inline-block text-sm font-bold tracking-[0.3em] mb-4 uppercase gold-text opacity-90">
                   — 修煉正果 —
                 </span>
-                <div className="flex flex-col gap-2 mb-3">
+                <div className="flex flex-col gap-2 mb-1">
                   <h1 className="text-5xl sm:text-7xl font-bold tracking-[0.2em] drop-shadow-2xl">{result.character}</h1>
                   <div className="flex items-center gap-2">
                     <span className="text-lg sm:text-3xl opacity-90 font-medium tracking-wide drop-shadow-lg gold-text">{result.title}</span>
