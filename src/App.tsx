@@ -346,8 +346,12 @@ export default function App() {
                 />
               </div>
             </div>
-            <h1 className="text-4xl font-bold mb-6 gold-text tracking-[0.2em]">Evan道理實驗室</h1>
-            <h2 className="text-xl mb-8 parchment-text font-medium">人生階段修煉測驗</h2>
+            <h1 className="text-3xl sm:text-4xl font-bold mb-4 gold-text tracking-[0.1em] sm:tracking-[0.2em] whitespace-nowrap">
+              Evan道理實驗室
+            </h1>
+            <h2 className="text-lg sm:text-xl mb-8 parchment-text font-medium">
+              人生階段修煉測驗
+            </h2>
             
             <div className="text-left parchment-text space-y-4 mb-10 text-sm leading-relaxed border-y border-[#e9b156]/20 py-6">
               <p>古老道家口中的「道法自然」，其實就是一套運行了千萬年的「宇宙演算法」。它精密地計算著萬物的盛衰、能量的流動、機遇的交替；而你現階段的際遇，正是你的「個人意識」與這套龐大系統互動後得出的運算結果。</p>
@@ -490,9 +494,9 @@ export default function App() {
                   — 修煉正果 —
                 </span>
                 <div className="flex flex-col gap-2 mb-1">
-                  <h1 className="text-5xl sm:text-7xl font-bold tracking-[0.2em] drop-shadow-2xl">{result.character}</h1>
+                  <h1 className="text-4xl sm:text-7xl font-bold tracking-[0.2em] drop-shadow-2xl whitespace-nowrap">{result.character}</h1>
                   <div className="flex items-center gap-2">
-                    <span className="text-lg sm:text-3xl opacity-90 font-medium tracking-wide drop-shadow-lg gold-text">{result.title}</span>
+                    <span className="text-lg sm:text-3xl opacity-90 font-medium tracking-wide drop-shadow-lg gold-text whitespace-nowrap">{result.title}</span>
                   </div>
                 </div>
               </motion.div>
